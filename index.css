@@ -13,15 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("https://cdn.pixabay.com/photo/2016/11/21/17/59/blackboard-1846865_960_720.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: black;
+
 }
 
 .container {
     height: 60%;
     width: 60%;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: contrast(80%);
     font-weight: 900;
     box-shadow: 10px 10px 20px black;
     cursor: pointer;
@@ -55,6 +54,9 @@ font-size: 5rem;
     border: 2px solid black;
     background-color: black;
     padding: 0px 3rem;
+    border-radius: 20px;
+    user-select: none;
+    box-shadow: 5px 5px white;
 }
 
 .clicking {
