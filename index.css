@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://cdn.pixabay.com/photo/2016/11/21/17/59/blackboard-1846865_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 60%;
+    width: 60%;
+    backdrop-filter: brightness(50%);
+    font-weight: 900;
+    box-shadow: 10px 10px 20px black;
+    cursor: pointer;
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+span {
+    color: red;
+}
+
+.container > * {
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 5rem;
+}
+
+.player {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background-color: black;
+    padding: 0px 3rem;
+}
+
+.clicking {
+    color: white;
+    pointer-events: none;
+}
