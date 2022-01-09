@@ -86,17 +86,13 @@ winOfX();
                   winOfY();
                 }
 
-let child = container.children;
-console.log(child);
-
-   if(child.classList.contains("clicking")) {
+   if(container.getElementsByClassName("clicking").length == 9) {
       player.innerHTML = `Is a draw!`;
       setTimeout(function() {
         location.reload();
       },2500);
     };
     
-
     });
 
 
