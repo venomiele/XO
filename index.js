@@ -37,6 +37,7 @@ let p2 = undefined;
          setTimeout(function() {
            location.reload();
          },2500);
+         return null;
        }
 
        function winOfY() {
@@ -45,11 +46,12 @@ let p2 = undefined;
          setTimeout(function() {
            location.reload();
          },2500);
+         return null;
        }
 
        // Winning conditions of X (player1)
        if(a.innerHTML == "X" && b.innerHTML == "X" && c.innerHTML  == "X") {
-winOfX();
+         winOfX();
        } else if (a.innerHTML == "X" && d.innerHTML == "X" && g.innerHTML  == "X") {
          winOfX();
        } else if (b.innerHTML == "X" && e.innerHTML == "X" && h.innerHTML  == "X") {
@@ -86,7 +88,9 @@ winOfX();
                   winOfY();
                 }
 
-   if(container.getElementsByClassName("clicking").length == 9) {
+                //Draw conditions
+
+   if(container.getElementsByClassName("clicking").length == 9 && winOfY !== null && winOfX !== null ) {
       player.innerHTML = `Is a draw!`;
       setTimeout(function() {
         location.reload();
