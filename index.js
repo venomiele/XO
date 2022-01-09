@@ -22,17 +22,17 @@ let p2 = undefined;
         clickCounter++;
        // Check the player's turn
        if(clickCounter % 2 == 0) {
-        player.innerHTML = `Player <span>1</span>'s turn!`
+        player.innerHTML = `Player <span>X</span>'s turn!`
         section.innerHTML = "O";
        } else {
-        player.innerHTML = `Player <span>2</span>'s turn!`
+        player.innerHTML = `Player <span>O</span>'s turn!`
            section.innerHTML = "X";
        }
 
        // Win functions
 
        function winOfX() {
-         player.innerHTML = `Player 1 has won!`;
+         player.innerHTML = `Player X has won!`;
          player.style.color = "red";
          setTimeout(function() {
            location.reload();
@@ -41,7 +41,7 @@ let p2 = undefined;
        }
 
        function winOfY() {
-         player.innerHTML = `Player 2 has won!`;
+         player.innerHTML = `Player O has won!`;
          player.style.color = "yellow";
          setTimeout(function() {
            location.reload();
@@ -104,6 +104,6 @@ let p2 = undefined;
 
  });
 window.addEventListener("DOMContentLoaded", () => {
-player.innerHTML = `Player <span>1</span>'s turn!`
+player.innerHTML = `Player <span>X</span>'s turn!`
 })
 
