@@ -32,6 +32,7 @@ body {
     "a b c"
     "d e f"
     "g h i";
+    user-select: none;
 }
 
 span {
@@ -43,7 +44,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-font-size: 5rem;
+    font-size: 5rem;
 }
 
 .player {
@@ -62,4 +63,26 @@ font-size: 5rem;
 .clicking {
     color: white;
     pointer-events: none;
+}
+
+@media screen and (max-width: 660px) {
+    .player {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .player {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        width: 90%;
+        height: 50%;
+        font-size: 1rem !important;
+    }
 }
